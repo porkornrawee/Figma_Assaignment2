@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380, initial-scale=1.0">
+  <title>Section สี</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0;padding:24px;font-family:'Sarabun',sans-serif;background:#FFFFFF; width:380px; box-sizing:border-box;}
+    h2 {font-size:20px;color:#1A1A1A;margin-bottom:16px;}
+    .grid {display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+    .swatch {width:120px;height:80px;border-radius:8px;display:flex;align-items:flex-end;justify-content:center;position:relative;}
+    .label {font-size:12px;color:#1A1A1A;margin-top:8px;text-align:center;}
+    .border {border:1px solid #CCCCCC;}
+  </style>
+</head>
+<body>
+  <h2>Section สี</h2>
+  <div class="grid">
+    <div>
+      <div class="swatch" style="background:#FF6B35;"></div>
+      <div class="label">Primary Orange #FF6B35</div>
+    </div>
+    <div>
+      <div class="swatch border" style="background:#FFFFFF;"></div>
+      <div class="label">Background White #FFFFFF</div>
+    </div>
+    <div>
+      <div class="swatch" style="background:#1A1A1A;"></div>
+      <div class="label">Text Dark #1A1A1A</div>
+    </div>
+    <div>
+      <div class="swatch" style="background:#666666;"></div>
+      <div class="label">Text Gray #666666</div>
+    </div>
+    <div>
+      <div class="swatch" style="background:#FFF0EB;"></div>
+      <div class="label">Light Tint #FFF0EB</div>
+    </div>
+  </div>
+</body>
+</html>

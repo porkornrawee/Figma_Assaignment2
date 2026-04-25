@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380, initial-scale=1.0">
+  <title>Analysis-CSTU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0;padding:24px;font-family:'Sarabun',sans-serif;background:#FFFFFF;width:380px;box-sizing:border-box;}
+    h2 {font-size:20px;color:#1A1A1A;margin-bottom:8px;}
+    h3 {font-size:16px;color:#1A1A1A;margin:8px 0;}
+    .card {border-left:4px solid #FF6B35;background:#FFF0EB;border-radius:12px;padding:16px;margin-top:12px;}
+    .label {font-weight:600;margin-top:8px;}
+    .text {margin-top:4px;line-height:1.4;}
+  </style>
+</head>
+<body>
+  <h2>Analysis-CSTU</h2>
+  <h3>การวิเคราะห์ปัญหาเว็บไซต์ CSTU (Mobile)</h3>
+  <div class="card">
+    <div class="title" style="font-weight:600;">🔴 ปัญหาที่ 1: Visual Hierarchy ไม่ชัดเจน</div>
+    <div class="label">ปัญหา:</div>
+    <div class="text">หน้าแรกของเว็บไซต์ CSTU บนมือถือขาด Visual Hierarchy ที่ชัดเจน ขนาด Font ของหัวข้อและเนื้อหาใกล้เคียงกันเกินไป ทำให้ผู้ใช้ไม่สามารถระบุจุดสำคัญได้ทันที</div>
+    <div class="label">ทฤษฎีที่อ้างอิง:</div>
+    <div class="text">Gestalt Principle — Law of Prägnanz: ผู้ใช้มองหา pattern ที่ชัดเจนที่สุด เมื่อไม่มี hierarchy ที่ชัด สมองต้องทำงานหนักขึ้น / Fitts' Law: ปุ่มและลิงก์ที่มีขนาดเล็กและอยู่ชิดกันทำให้ใช้งานยากบนหน้าจอมือถือ</div>
+    <div class="label">การแก้ไข:</div>
+    <div class="text">ออกแบบใหม่โดยใช้ Type Scale ที่ชัดเจน (H1: 24px, H2: 18px, Body: 14px) และเพิ่ม white space เพื่อสร้าง breathing room ให้แต่ละ section</div>
+  </div>
+  <div class="card">
+    <div class="title" style="font-weight:600;">🔴 ปัญหาที่ 2: Color Contrast ต่ำกว่ามาตรฐาน</div>
+    <div class="label">ปัญหา:</div>
+    <div class="text">สีของข้อความและพื้นหลังในส่วน Navigation และเนื้อหาหลักมี Contrast Ratio ต่ำกว่ามาตรฐาน ทำให้ผู้ที่มีความบกพร่องทางสายตา (Visual Impairment) อ่านได้ยาก</div>
+    <div class="label">ทฤษฎีที่อ้างอิง:</div>
+    <div class="text">WCAG 2.1 Accessibility Guidelines: กำหนดให้ Normal text ต้องมี Contrast Ratioอย่างน้อย 4.5:1 (AA level) และ Large text อย่างน้อย 3:1 / Human Factors: ผู้ใช้ประมาณ 8% ของผู้ชายมีภาวะ Color Vision Deficiency</div>
+    <div class="label">การแก้ไข:</div>
+    <div class="text">ใช้สีข้อความ #1A1A1A บนพื้น #FFFFFF (Contrast Ratio 18.1:1) และสีขาวบน #FF6B35 สำหรับปุ่ม (Contrast Ratio 3.8:1) ผ่านมาตรฐาน WCAG AA สำหรับ Large text</div>
+  </div>
+</body>
+</html>

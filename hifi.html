@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380, initial-scale=1.0">
+  <title>Redesign-CSTU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0;padding:0;width:380px;height:800px;overflow:hidden;font-family:'Sarabun',sans-serif;background:#FFFFFF;}
+    .navbar {height:56px;background:#FF6B35;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:relative;}
+    .icon-line {width:24px;height:2px;background:#FFFFFF;margin:4px 0;}
+    .hamburger {display:flex;flex-direction:column;justify-content:center;}
+    .title {position:absolute;left:50%;transform:translateX(-50%);color:#FFFFFF;font-weight:700;font-size:20px;}
+    .search {width:22px;height:22px;border:2px solid #FFFFFF;border-radius:50%;}
+    .hero {height:180px;background:#FFFFFF;padding:24px 16px;text-align:center;}
+    .hero h1 {font-weight:700;font-size:24px;color:#1A1A1A;margin-bottom:8px;}
+    .hero p {font-weight:400;font-size:13px;color:#666666;margin-bottom:16px;}
+    .hero button {background:#FF6B35;color:#FFFFFF;font-weight:600;font-size:14px;padding:10px 24px;border:none;border-radius:20px;cursor:pointer;}
+    .quick {background:#FFFFFF;padding:16px;border-top:1px solid #F0F0F0;}
+    .quick h3 {font-weight:600;font-size:16px;color:#1A1A1A;margin-bottom:12px;}
+    .quick .cards {display:flex;gap:8px;}
+    .quick .card {flex:1;background:#FFF0EB;border-radius:12px;padding:12px 8px;text-align:center;}
+    .quick .circle {width:40px;height:40px;background:#FF6B35;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;}
+    .quick .label {font-weight:600;font-size:12px;color:#1A1A1A;margin-top:8px;}
+    .news {background:#FFFFFF;padding:16px;border-top:4px solid #F5F5F5;}
+    .news h3 {font-weight:600;font-size:16px;color:#1A1A1A;margin-bottom:12px;}
+    .news .card {background:#FFFFFF;border-radius:12px;border-left:4px solid #FF6B35;padding:12px 16px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,0.06);}
+    .news .date {font-weight:400;font-size:11px;color:#FF6B35;margin-bottom:4px;}
+    .news .title {font-weight:600;font-size:14px;color:#1A1A1A;margin-bottom:4px;}
+    .news .desc {font-weight:400;font-size:12px;color:#666666;}
+    .bottom {height:56px;background:#FF6B35;display:flex;justify-content:space-around;align-items:center;}
+    .bottom .icon {width:24px;height:24px;color:#FFFFFF;font-size:18px;}
+  </style>
+</head>
+<body>
+  <!-- Top Navbar -->
+  <div class="navbar">
+    <div class="hamburger">
+      <div class="icon-line"></div>
+      <div class="icon-line"></div>
+      <div class="icon-line"></div>
+    </div>
+    <div class="title">CSTU</div>
+    <div class="search"></div>
+  </div>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>ยินดีต้อนรับสู่ CSTU</h1>
+    <p>ภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์</p>
+    <button>ดูข้อมูลเพิ่มเติม</button>
+  </div>
+  <!-- Quick Links -->
+  <div class="quick">
+    <h3>เมนูด่วน</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="circle">🎓</div>
+        <div class="label">หลักสูตร</div>
+      </div>
+      <div class="card">
+        <div class="circle">📅</div>
+        <div class="label">ปฏิทิน</div>
+      </div>
+      <div class="card">
+        <div class="circle">📢</div>
+        <div class="label">ประกาศ</div>
+      </div>
+    </div>
+  </div>
+  <!-- News Section -->
+  <div class="news">
+    <h3>ข่าวสารและกิจกรรม</h3>
+    <div class="card">
+      <div class="date">25 เม.ย. 2569</div>
+      <div class="title">เปิดรับสมัครนักศึกษาใหม่ ปีการศึกษา 2569</div>
+      <div class="desc">ภาควิชาวิทยาการคอมพิวเตอร์เปิดรับสมัครนักศึกษาระดับปริญญาตรี...</div>
+    </div>
+    <div class="card">
+      <div class="date">20 เม.ย. 2569</div>
+      <div class="title">ผลการแข่งขัน Programming Contest ประจำปี 2569</div>
+      <div class="desc">ทีมนักศึกษา CSTU คว้ารางวัลชนะเลิศการแข่งขัน...</div>
+    </div>
+  </div>
+  <!-- Bottom Navbar -->
+  <div class="bottom">
+    <div class="icon">🏠</div>
+    <div class="icon">🔍</div>
+    <div class="icon">📅</div>
+    <div class="icon">👤</div>
+  </div>
+</body>
+</html>
